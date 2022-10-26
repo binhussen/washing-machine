@@ -5,18 +5,12 @@ using Microsoft.EntityFrameworkCore;
 
 public class DataContext : DbContext
 {
-    protected readonly IConfiguration _config;
-
-    public DataContext(IConfiguration config)
+    public DataContext(DbContextOptions<DataContext> options) : base(options) { }
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        _config = config;
+        base.OnModelCreating(modelBuilder);
     }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder options)
-    {
-        options.UseInMemoryDatabase("MachineDatabase");
-    }
-
-    public DbSet<Time> Times { get; set; }
+public DbSet<Time> Times { get; set; }
     public DbSet<Machine> Machines { get; set; }
 }
