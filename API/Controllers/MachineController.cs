@@ -27,12 +27,12 @@ namespace API.Controllers
         public IActionResult GetAll()
         {
             var machines = _machineRepository.GetAll();
-            foreach (var item in machines)
+            /*foreach (var item in machines)
             {
                 var times = _timeRepository.GetAll(item.Id);
                item.Times = times.ToList();
 
-            }
+            }*/
             return Ok(machines);
         }
 
