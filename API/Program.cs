@@ -1,6 +1,7 @@
 using API.Interface;
 using API.Repository;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,11 +12,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<DataContext>();
 builder.Services.AddCors();
 builder.Services.AddScoped<ITime, TimeRepository>();
 builder.Services.AddScoped<IMachine, MachineRepository>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddDbContext<DataContext>(o => o.UseNpgsql(builder.Configuration.GetConnectionString("Postgres_Db")));
 
 var app = builder.Build();
 
