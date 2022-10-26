@@ -16,7 +16,8 @@ builder.Services.AddCors();
 builder.Services.AddScoped<ITime, TimeRepository>();
 builder.Services.AddScoped<IMachine, MachineRepository>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-builder.Services.AddDbContext<DataContext>(o => o.UseNpgsql(builder.Configuration.GetConnectionString("Postgres_Db")));
+//builder.Services.AddDbContext<DataContext>(o => o.UseNpgsql(builder.Configuration.GetConnectionString("MS_Db")));
+builder.Services.AddDbContext<DataContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("MS_Db")));
 
 var app = builder.Build();
 
