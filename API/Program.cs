@@ -13,6 +13,9 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<DataContext>();
 builder.Services.AddCors();
+builder.Services.AddScoped<ITime, TimeRepository>();
+builder.Services.AddScoped<IMachine, MachineRepository>();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var app = builder.Build();
 
