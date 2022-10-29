@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vfvggsqv28mJeKowcUZQABbliQx4iE3qfUmRMnx/Icz7DNv7wBJpJ4c066KwcjTGseEeg8gri9cwlxef+mzMdw==",
+  "dgSpecHash": "uQuv1a0/jAYgvYdy9+OgzFdyAHEFxJsR6RCSHeiNQGhHKbGLt7PV+FToWF1iGn3qOaJ/aorN7Hm4Y6eHJHFzTQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mhdbi\\source\\repos\\Machine\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\mhdbi\\Desktop\\New folder\\washing-machine\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mhdbi\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\mhdbi\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

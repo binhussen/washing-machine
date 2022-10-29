@@ -60,6 +60,15 @@ namespace API.Controllers
             {
                 return NotFound($"Machine with id: {machineid} doesn't exist in the database.");
             }
+            var times =_timeRepository.GetAll(machineid);
+            foreach(var ti in times.ToList())
+            {
+                if (ti.StartTime == timeDto.StartTime || ti.EndTime == timeDto.EndTime)
+                {
+                    return BadRequest($"Time with start time: {timeDto.StartTime} and end time: {timeDto.EndTime} already exists in the database.");
+                }
+            }
+
             var time = _mapper.Map<Time>(timeDto);
             _timeRepository.Create(machineid,time);
             return Ok(new { message = "Time created" });

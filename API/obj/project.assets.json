@@ -5784,11 +5784,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mhdbi\\source\\repos\\Machine\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\mhdbi\\Desktop\\New folder\\washing-machine\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\mhdbi\\source\\repos\\Machine\\API\\API.csproj",
+      "projectPath": "C:\\Users\\mhdbi\\Desktop\\New folder\\washing-machine\\API\\API.csproj",
       "packagesPath": "C:\\Users\\mhdbi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mhdbi\\source\\repos\\Machine\\API\\obj\\",
+      "outputPath": "C:\\Users\\mhdbi\\Desktop\\New folder\\washing-machine\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
