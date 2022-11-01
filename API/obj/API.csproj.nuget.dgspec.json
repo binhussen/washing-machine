@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mhdbi\\source\\repos\\Machine - Copy\\API\\API.csproj": {}
+    "C:\\Users\\mhdbi\\Desktop\\New folder\\washing-machine\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mhdbi\\source\\repos\\Machine - Copy\\API\\API.csproj": {
+    "C:\\Users\\mhdbi\\Desktop\\New folder\\washing-machine\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mhdbi\\source\\repos\\Machine - Copy\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\mhdbi\\Desktop\\New folder\\washing-machine\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\mhdbi\\source\\repos\\Machine - Copy\\API\\API.csproj",
+        "projectPath": "C:\\Users\\mhdbi\\Desktop\\New folder\\washing-machine\\API\\API.csproj",
         "packagesPath": "C:\\Users\\mhdbi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mhdbi\\source\\repos\\Machine - Copy\\API\\obj\\",
+        "outputPath": "C:\\Users\\mhdbi\\Desktop\\New folder\\washing-machine\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -58,6 +58,20 @@
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL.Design": {
+              "target": "Package",
+              "version": "[1.1.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
